@@ -14,7 +14,7 @@ sudo add-apt-repository \
 # Install Docker
 sudo apt-get -y install docker-ce
 
-echo -n "\n\nEnter DB URL [ENTER]: "
+echo  -e -n "\n\nEnter DB URL [ENTER]: "
 read db_url
 
 echo -n "Enter DB username [ENTER]: "
@@ -23,7 +23,7 @@ read db_user
 echo -n "Enter DB password [ENTER]: "
 read -s db_pass
 
-echo "\n\nCreating database 'wordpress' on MySQL server..."
+echo -e "\n\nCreating database 'wordpress' on MySQL server..."
 echo "create database wordpress" | mysql --host=$db_url --user=$db_user --password=$db_pass
 echo "Database created!"
 
