@@ -12,7 +12,7 @@ sudo add-apt-repository \
    stable"
 
 # Install Docker
-sudo apt-get -y install docker-ce
+sudo apt-get -y install docker-ce mysql-client-core-5.7
 
 echo  -e -n "\n\nEnter DB URL [ENTER]: "
 read db_url
