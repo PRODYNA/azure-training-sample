@@ -1,8 +1,8 @@
 terraform {
   required_version = ">= 0.13"
   backend "azurerm" {
-    resource_group_name  = "demo-resources"
-    storage_account_name = "azuredemotfstate"
+    resource_group_name  = "RG_TRAINING_[NAME]"
+    storage_account_name = "satf[name]"
     container_name       = "tf-state"
     key                  = "azure-training-demo.tfstate"
     subscription_id      = "798e5b58-c51f-4934-8e45-809eccec7345"
