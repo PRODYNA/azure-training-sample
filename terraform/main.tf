@@ -5,7 +5,6 @@ terraform {
     storage_account_name = "satf[name]"
     container_name       = "tf-state"
     key                  = "azure-training-demo.tfstate"
-    subscription_id      = "798e5b58-c51f-4934-8e45-809eccec7345"
   }
 
   required_providers {
