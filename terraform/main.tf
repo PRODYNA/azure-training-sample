@@ -1,22 +1,31 @@
 terraform {
-  required_version = ">= 0.13"
+  required_version = ">= 1.0"
   backend "azurerm" {
-    resource_group_name  = "RG_TRAINING_[NAME]"
-    storage_account_name = "satf[name]"
+    subscription_id      = "3902cdee-a787-433e-b331-02b77bc9758c"
+    resource_group_name  = "rg-traininig-1"
+    storage_account_name = "pdazuretraining1"
     container_name       = "tf-state"
-    key                  = "azure-training-demo.tfstate"
+    key                  = "azure-terraform-training.tfstate"
   }
 
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "2.33.0"
+      version = "3.2.0"
     }
   }
 }
 
 provider "azurerm" {
+  subscription_id = var.subscription_id
   features {}
+}
+
+locals {
+  instances = [
+    "i1",
+    "i2",
+  ]
 }
 
 #########################

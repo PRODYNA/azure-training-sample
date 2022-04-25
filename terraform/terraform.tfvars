@@ -1,2 +1,5 @@
-resource_group_name = "demo-resources"
-user_name = "fassmus"
+subscription_id     = "3902cdee-a787-433e-b331-02b77bc9758c"
+resource_group_name = "rg-traininig-1"
+vnet_cidr           = "10.0.0.0/16"
+default_subnet_cidr = "10.0.0.0/24"
+db_subnet_cidr      = "10.0.1.0/24"
