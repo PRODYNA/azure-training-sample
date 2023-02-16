@@ -6,7 +6,7 @@ sudo apt-get -y install apt-transport-https ca-certificates curl software-proper
 
 # Add apt repos
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo --yes add-apt-repository \
+sudo add-apt-repository --yes \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
